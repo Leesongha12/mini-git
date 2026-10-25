@@ -1,0 +1,31 @@
+Mini Git 시작 안내 (Windows / VS Code)
+
+1. 압축을 풀면 mini-git 폴더가 나옵니다.
+2. 먼저 GitHub 저장소를 컴퓨터로 복제하세요.
+   VS Code에서 Ctrl+Shift+P → Git: Clone 선택
+   https://github.com/Leesongha12/mini-git.git 입력
+   저장 위치를 선택한 뒤 복제한 폴더를 엽니다.
+   이미 복제한 폴더가 있다면 그 폴더를 여세요.
+3. 압축을 푼 mini-git 폴더 안의 파일 5개를 복제한 저장소 폴더 안에 복사하세요.
+   README.md 교체 확인이 나오면 교체하세요.
+   mini-git 폴더 전체를 넣어 중첩하지 말고 안의 파일만 복사하세요.
+   기존 저장소의 .git 폴더는 그대로 두세요.
+4. VS Code → 터미널 → 새 터미널에서 실행합니다.
+   python main.py
+   (python이 안 되면 py main.py)
+5. mini-git> 에서 HELP 또는 README의 예시를 입력합니다.
+   종료는 exit입니다.
+6. PowerShell로 돌아온 다음 테스트합니다.
+   python -m unittest -v
+7. 다음 명령을 한 줄씩 실행합니다.
+   git status
+   git add main.py README.md test_main.py .gitignore START_HERE.txt
+   git commit -m "Complete Mini Git assignment"
+   git push origin main
+8. GitHub 저장소를 새로고침해 main.py와 README를 확인하세요.
+
+주의: 압축 파일 자체에는 .git 이력이 없습니다.
+압축 폴더에서 바로 push하지 말고 복제한 저장소에 파일을 넣어 진행하세요.
+Git 사용자명/이메일 오류가 나면 본인 정보를 저장소에 설정 후 커밋을 다시 진행합니다.
+   git config user.name "Leesongha12"
+   git config user.email "본인의 GitHub 이메일"
